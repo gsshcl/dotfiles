@@ -1,0 +1,40 @@
+Host *
+    ControlMaster auto
+    ControlPath ~/.ssh/socket/%r@%h:%p
+    ServerAliveInterval 120
+
+Host blog
+    Hostname gssxgss.me
+    Port 443
+    User gssxgss
+    IdentityFile ~/.ssh/id_rsa
+    IdentitiesOnly yes
+
+Host vmblog
+    Hostname vm.gssxgss.me
+    Port 22
+    User gssxgss
+    IdentityFile ~/.ssh/id_rsa
+    IdentitiesOnly yes
+
+Host elemedev
+    Hostname vm.ele.me
+    Port 22
+    User elemedev
+    IdentityFile ~/.ssh/mba
+    IdentitiesOnly yes
+
+Host develeme
+    Hostname web.ele.me
+    Port 22
+    User elemedev
+    IdentityFile ~/.ssh/mba
+    IdentitiesOnly yes
+
+Host github
+    Hostname github.com
+    Port 22
+    User git
+    IdentityFile ~/.ssh/mba
+    IdentitiesOnly yes
+

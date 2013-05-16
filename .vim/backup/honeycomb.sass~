@@ -1,0 +1,60 @@
+$orange: #ffc173
+$yellow: #ffe373
+$bg: url("./img.jpg") no-repeat center center
+$w: 58px
+
+html, body, div 
+  margin: 0
+  padding: 0
+
+.container
+  width: 500px
+  margin: 100px auto
+  padding: 10px
+  background: $orange
+
+.honeycomb-1 
+  position: relative
+  width: 200px
+  height: 4 * $w
+  background: $bg
+  &:before
+    content: ""
+    display: block
+    width: 0
+    height: 0
+    position: absolute
+    top: 0
+    border-bottom: $w solid transparent
+    border-left: 100px solid $orange
+    border-right: 100px solid $orange
+  &:after
+    content: ""
+    display: block
+    width: 0
+    height: 0
+    position: absolute
+    bottom: 0
+    border-top: $w solid transparent
+    border-left: 100px solid $orange
+    border-right: 100px solid $orange
+  &.detail
+    &:before, &:after
+      border-right-color: $yellow
+      border-left-color: $yellow
+
+.honeycomb-2
+  width: 200px
+  position: relative
+  > .trans-1, .trans-2
+    position: absolute
+    width: 4*$w
+    height: 2*$w
+    background: $bg
+  > .trans-1
+    -moz-transform: rotate(60deg)
+  > .trans-2
+    -moz-transform: rotate(-30deg)
+  > .basic
+    width: 200px
+    height: 2*$w

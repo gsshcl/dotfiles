@@ -1,0 +1,15 @@
+<script type="text/javascript">
+  var arr1 = arr2 = [1, 2, 3, 4, 5];
+  var l1 = arr1.length;
+
+  console.log(arr2)
+  var temp;
+  for (i = 0; i< l1/2; i++) {
+    console.log(i, arr1)
+    console.log(i, arr2)
+    temp = arr1[i]
+    arr1[i] = arr1[l1 - i - 1]
+    arr1[l1-i-1] = temp
+  }
+</script>
+

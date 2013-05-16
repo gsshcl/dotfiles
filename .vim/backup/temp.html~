@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <style type="text/css">
+    * {margin:0;padding:0;}
+    ul, ol {list-style: none;}
+    .searchTable {width:785px;border: 2px solid #e8d3c2;border-bottom: 0;}
+    .searchTable tr{height: 75px;line-height: 75px;}
+    .searchTable th{width: 135px;border-right: 2px solid #e8d3c2;border-bottom: 2px solid #e8d3c2;color: #7caa14;font-size:14px;text-align: center;}
+    .searchTable2Column td{width:650px;border-bottom: 2px solid #e8d3c2;line-height: 75px;padding:0;}
+    .searchTable .searchTime ul{padding-left: 75px;height:75px;overflow: hidden;}
+    .searchTable .searchTime li{height:75px;float:left;}
+    .searchTable .searchTime li input{width: 130px;}
+    .searchTable .searchTime li p{width:50px;text-align: center;font-size: 18px;}
+    .searchTable .orderNumber{margin-left:75px;width: 315px;}
+  </style>
+</head>
+<body>
+  <div class="searchTable searchTable2Column">
+    <table>
+      <tr>
+        <th>订单编号</th>
+        <td><input type="text" name="orderNumber" class="orderNumber"></td>
+      </tr>
+      <tr>
+        <th>订单配送时间</th>
+        <td class="searchTime">
+          <ul>
+            <li><input type="text" name="startTime" class="startTime"></li>
+            <li><p>~</p></li>
+            <li><input type="text" name="endTime" class="endTime"></li>
+          </ul>
+        </td>
+      </tr>
+    </table>
+  </div>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<script type="text/javascript">
+  var foo = [4, 1, 6, 2, 3];
+
+  function removeMin(arr) {
+    var tmp = arr[0];
+    var l = arr.length;
+    var tmp_place = 0;
+    for (var i = 1; i < l; i++) {
+      if (tmp - arr[i] > 0) {
+        tmp = arr[i];
+        tmp_place = i;
+      }
+    }
+    foo[tmp_place] = foo[l - 1];
+    foo.length = l - 1;
+    console.log(foo)
+  }
+removeMin(foo)
+
+</script>
