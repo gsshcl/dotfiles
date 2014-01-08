@@ -1,5 +1,5 @@
-.vim/undo/*
-.vim/backup/*
-.vim/bundle/*
+.vim/undo/
+.vim/backup/
+.vim/bundle/
 
-.vim/bundle/vundle
+tmux-powerline/
