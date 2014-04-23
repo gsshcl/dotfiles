@@ -12,34 +12,60 @@ call vundle#rc("~/.dotfiles/vim/bundle")
 " required!
 Bundle 'gmarik/vundle'
 
-" My Bundles here:
+""""""""""""""""""""
+" My Bundles
+""""""""""""""""""""
 
-" original repos on github
+""""""""""""""""""""
+" GENERAL
 
 " vim powerline
 Bundle 'Lokaltog/vim-powerline'
-" color theme
-Bundle 'altercation/vim-colors-solarized'
-" emmet - html/css tag generator
-Bundle 'mattn/emmet-vim'
-" nerdetree - folder exlorer
-Bundle 'scrooloose/nerdtree'
-" auto close when typing
-Bundle 'Townk/vim-autoclose'
-" auto complete
-Bundle 'Valloric/YouCompleteMe'
-" shows a git diff in gutter
-Bundle 'airblade/vim-gitgutter'
-" Fuzzy file, buffer, mru, tag, etc finder
-Bundle 'kien/ctrlp.vim'
-" Syntax checking hacks for vim
-Bundle 'scrooloose/syntastic'
+
 " quoting/parenthesizing made simple
 Bundle 'tpope/vim-surround'
+
+" nerdetree - folder exlorer
+Bundle 'scrooloose/nerdtree'
+
+" Fuzzy file, buffer, mru, tag, etc finder
+Bundle 'kien/ctrlp.vim'
+
+" auto close when typing
+Bundle 'Townk/vim-autoclose'
+
+" auto complete
+Bundle 'Valloric/YouCompleteMe'
+
+" shows a git diff in gutter
+Bundle 'airblade/vim-gitgutter'
+
+""""""""""""""""""""
+" UI
+
+" Syntax checking hacks for vim
+Bundle 'scrooloose/syntastic'
+
+" color theme
+Bundle 'altercation/vim-colors-solarized'
+
+
+""""""""""""""""""""
+" CODING
+
+" emmet - html/css tag generator
+Bundle 'mattn/emmet-vim'
+
 " Vim runtime files for Haml, Sass, and SCSS
 Bundle 'tpope/vim-haml'
+
 " A syntax highlighting file for JSON
 Bundle 'vim-scripts/JSON.vim'
+
+" A syntax highlighting file for js
+Bundle "pangloss/vim-javascript"
+
+
 
 " vim-scripts repos
 " Bundle 'L9'
