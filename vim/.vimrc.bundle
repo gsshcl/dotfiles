@@ -32,9 +32,6 @@ Plugin 'Townk/vim-autoclose'
 " shows a git diff in gutter
 Plugin 'airblade/vim-gitgutter'
 
-" Lean & mean status/tabline for vim that's light as air.
-" Plugin 'bling/vim-airline'
-
 " Vim script for text filtering and alignment
 Plugin 'godlygeek/tabular'
 
@@ -58,9 +55,6 @@ Plugin 'tpope/vim-commentary'
 
 " a Git wrapper so awesome, it should be illegal
 Plugin 'tpope/vim-fugitive'
-
-" Vim Markdown runtime files
-Plugin 'tpope/vim-markdown'
 
 " enable repeating supported plugin maps with "."
 Plugin 'tpope/vim-repeat'
@@ -112,23 +106,8 @@ Plugin 'vim-ruby/vim-ruby'
 " jade
 Plugin 'digitaltoad/vim-jade'
 
-" vim-scripts repos
-" Plugin 'L9'
-" Plugin 'FuzzyFinder'
-
-" non github repos
-" Plugin 'git://git.wincent.com/command-t.git'
-" ...
-
-"
-" Brief help
-" :BundleList          - list configured bundles
-" :BundleInstall(!)    - install(update) bundles
-" :BundleSearch(!) foo - search(or refresh cache first) for foo
-" :BundleClean(!)      - confirm(or auto-approve) removal of unused bundles
-"
-" see :h vundle for more details or wiki for FAQ
-" NOTE: comments after Bundle command are not allowed..
+" markdown
+Plugin 'tpope/vim-markdown'
 
 call vundle#end()            " required
 filetype plugin indent on    " required "

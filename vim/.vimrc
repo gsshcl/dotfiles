@@ -20,5 +20,5 @@ source ~/.dotfiles/vim/.vimrc.function
 
 " Local
 if filereadable(expand("~/.vimrc_local"))
-  source ~/.vimrc_local
+    source ~/.vimrc_local
 endif

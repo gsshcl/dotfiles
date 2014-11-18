@@ -10,19 +10,19 @@ set tw=0              " sets the text width
 set ai                " Auto indent
 set si                " Smart indet
 set expandtab         " tabs are spaces, not tabs
-set shiftwidth=2      " use indents of 2 spaces
-set tabstop=2         " an indentation every two columns
-set softtabstop=2     " let backspace delete indent
+set shiftwidth=4      " use indents of 4 spaces
+set tabstop=4         " an indentation every two columns
+set softtabstop=4     " let backspace delete indent
 
 " Remove trailing whitespaces and ^M chars
 " autocmd FileType c,cpp,java,php,js,python,twig,xml,yml autocmd BufWritePre <buffer> :call setline(1,map(getline(1,"$"),'substitute(v:val,"\\s\\+$","","")'))
 autocmd BufWritePre <buffer> :call setline(1,map(getline(1,"$"),'substitute(v:val,"\\s\\+$","","")'))
 
-set tabpagemax=15             " only show 15 tabs
-set showmode                  " display the current mode
-set showcmd                   " show partial commands in status line and selected characters/lines in visual mode
-set ruler                      " show the ruler
-set cursorline                " highlight current line
+set tabpagemax=15     " only show 15 tabs
+set showmode          " display the current mode
+set showcmd           " show partial commands in status line and selected characters/lines in visual mode
+set ruler             " show the ruler
+set cursorline        " highlight current line
 
 set laststatus=2                " Displaying status line always
 set backspace=indent,eol,start  " Backspace for dummys

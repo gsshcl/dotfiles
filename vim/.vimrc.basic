@@ -10,7 +10,7 @@ set nospell                   " spell checking off
 set shortmess+=filmnrxoOtT    " abbrev. of messages (avoids 'hit enter')
 set virtualedit=onemore       " allow for cursor beyond last character
 set history=1000              " Store a ton of history (default is 20)
-set clipboard=unnamed         " use system clipboard "
+" set clipboard=unnamed         " use system clipboard "
 
 " Setting up the directories
 set noswapfile
@@ -39,22 +39,31 @@ let g:clipbrdDefaultReg='+'
 " ============================================================
 
 " Indent Fixes
-    autocmd FileType css,scss,sass,less,html,ruby,jade,haml,jinja,javascript,puppet,yaml set shiftwidth=2
-    autocmd FileType css,scss,sass,less,html,ruby,jade,haml,jinja,javascript,puppet,yaml set tabstop=2
-    autocmd FileType css,scss,sass,less,html,ruby,jade,haml,jinja,javascript,puppet,yaml set softtabstop=2
+    autocmd FileType css,scss,sass,less,html,ruby,jade,haml,jinja,javascript,json,puppet,yaml set shiftwidth=2
+    autocmd FileType css,scss,sass,less,html,ruby,jade,haml,jinja,javascript,json,puppet,yaml set tabstop=2
+    autocmd FileType css,scss,sass,less,html,ruby,jade,haml,jinja,javascript,json,puppet,yaml set softtabstop=2
 
-" HTML
+" FE
     autocmd BufRead,BufNewFile *.html set filetype=html
+    autocmd BufRead,BufNewFile *.haml set filetype=haml
+    autocmd BufRead,BufNewFile *.svg set filetype=svg
+    autocmd BufRead,BufNewFile *.less set filetype=less
+    autocmd BufRead,BufNewFile *.sass,*.scss set filetype=sass
+    autocmd BufRead,BufNewFile *.json set filetype=json
+
+" css3 syntax bug fix
+    augroup VimCSS3Syntax
+      autocmd!
+
+      autocmd FileType css setlocal iskeyword+=-
+    augroup END
 
 " Python
     " Highlight 80 column
     autocmd FileType python set cc=80
 
-" Less
-    autocmd BufRead,BufNewFile *.less set filetype=less
-
-" Sass
-    autocmd BufRead,BufNewFile *.sass,*.scss set filetype=sass
-
 " Erb
     autocmd BufRead,BufNewFile *.erb set filetype=eruby
+
+" markdown
+    autocmd BufNewFile,BufReadPost *.md set filetype=markdown
