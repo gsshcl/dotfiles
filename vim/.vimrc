@@ -14,3 +14,11 @@ source ~/.dotfiles/vim/.vimrc.key
 
 " Plugin settings
 source ~/.dotfiles/vim/.vimrc.plugin
+
+" Functions
+source ~/.dotfiles/vim/.vimrc.function
+
+" Local
+if filereadable(expand("~/.vimrc_local"))
+  source ~/.vimrc_local
+endif

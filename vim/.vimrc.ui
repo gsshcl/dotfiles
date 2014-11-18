@@ -1,9 +1,8 @@
-" ============================================================
+"""""""""""""""""""""
 " Formatting
-" ============================================================
+"""""""""""""""""""""
 
 syntax on             " syntax highlighting
-set background=dark   " Assume a dark background
 set number            " Show numbers
 set nowrap            " no wrap long lines
 set lbr               " set linebreak
@@ -16,18 +15,14 @@ set tabstop=2         " an indentation every two columns
 set softtabstop=2     " let backspace delete indent
 
 " Remove trailing whitespaces and ^M chars
-"autocmd FileType c,cpp,java,php,js,python,twig,xml,yml autocmd BufWritePre <buffer> :call setline(1,map(getline(1,"$"),'substitute(v:val,"\\s\\+$","","")'))
+" autocmd FileType c,cpp,java,php,js,python,twig,xml,yml autocmd BufWritePre <buffer> :call setline(1,map(getline(1,"$"),'substitute(v:val,"\\s\\+$","","")'))
 autocmd BufWritePre <buffer> :call setline(1,map(getline(1,"$"),'substitute(v:val,"\\s\\+$","","")'))
 
 set tabpagemax=15             " only show 15 tabs
 set showmode                  " display the current mode
+set showcmd                   " show partial commands in status line and selected characters/lines in visual mode
+set ruler                      " show the ruler
 set cursorline                " highlight current line
-
-if has('cmdline_info')
-    set ruler                      " show the ruler
-    set rulerformat=%30(%=\:b%n%y%m%r%w\ %l,%c%V\ %P%) " a ruler on steroids
-    set showcmd                    " show partial commands in status line and selected characters/lines in visual mode
-endif
 
 set laststatus=2                " Displaying status line always
 set backspace=indent,eol,start  " Backspace for dummys
@@ -38,6 +33,7 @@ set hlsearch                    " Highlight search terms
 set winminheight=0              " Windows can be 0 line high
 set ignorecase                  " Case insensitive search
 set smartcase                   " Case sensitive when uc present
+
 set wildmenu                    " Show list instead of just completing
 set wildmode=list:longest,full  " Command <Tab> completion, list matches, then longest common part, then all.
 set whichwrap=b,s,h,l,<,>,[,]   " Backspace and cursor keys wrap to
@@ -51,13 +47,23 @@ set autoread                    " Auto reload file on change
 set list                        " displays whitespace
 set listchars=tab:>\ ,trail:\ ,extends:#,nbsp:\  " Highlight problematic whitespace
 
-" ============================================================
-" Theme
-" ============================================================
+" Fix Cursor in TMUX
+if exists('$TMUX')
+  let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
+  let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
+else
+  let &t_SI = "\<Esc>]50;CursorShape=1\x7"
+  let &t_EI = "\<Esc>]50;CursorShape=0\x7"
+endif
 
+"""""""""""""""""""""
+" Theme
+"""""""""""""""""""""
+
+set background=dark
 if has('gui_running')
-    color wombat
-    set gfn=Monaco:h12             " set gui font
+    color Tomorrow-Night
+    set guifont=Monaco:h12         " set gui font
     set guioptions-=T              " remove the toolbar
     set lines=40                   " 40 lines of text instead of 24,
 else
@@ -67,3 +73,4 @@ else
     let g:solarized_termcolors=256
     set t_Co=256
 endif
+
