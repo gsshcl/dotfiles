@@ -109,5 +109,8 @@ Plugin 'digitaltoad/vim-jade'
 " markdown
 Plugin 'tpope/vim-markdown'
 
+" coffeescript
+Plugin 'kchmck/vim-coffee-script'
+
 call vundle#end()            " required
 filetype plugin indent on    " required "

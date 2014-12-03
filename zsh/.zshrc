@@ -80,3 +80,7 @@ export LOCALE=UTF-8
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+export PATH=$HOME/.rbenv/bin:$PATH
+eval "$(rbenv init -)"
+export PATH="$(brew --prefix homebrew/php/php56)/sbin:$PATH"
+PHP_AUTOCONF="/usr/local/bin/autoconf"
