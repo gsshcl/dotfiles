@@ -112,5 +112,8 @@ Plugin 'tpope/vim-markdown'
 " coffeescript
 Plugin 'kchmck/vim-coffee-script'
 
+" twig/jinjia
+Plugin 'Glench/Vim-Jinja2-Syntax'
+
 call vundle#end()            " required
 filetype plugin indent on    " required "

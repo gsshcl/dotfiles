@@ -44,6 +44,7 @@ let g:clipbrdDefaultReg='+'
     autocmd FileType php,css,scss,sass,less,html,eruby,ruby,jade,haml,jinja,javascript,json,coffee,puppet,yaml set softtabstop=2
 
 " FE
+    autocmd BufRead,BufNewFile *.twig set filetype=jinja
     autocmd BufRead,BufNewFile *.html set filetype=html
     autocmd BufRead,BufNewFile *.haml set filetype=haml
     autocmd BufRead,BufNewFile *.svg set filetype=svg

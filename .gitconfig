@@ -27,5 +27,8 @@
 	clean = git media clean %f
 	smudge = git media smudge %f
 [user]
-  name = GSSxGSS
-  email = gsshcl@gmail.com
+  name = Kou Shinrin
+  email = huang-chenlin@kayac.com
+[branch "master"]
+  remote = origin
+  merge = refs/heads/master
