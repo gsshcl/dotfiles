@@ -1,6 +1,7 @@
 [color]
   ui = auto
 [alias]
+  a = add -A
   br = branch
   ci = commit
   co = checkout
@@ -24,11 +25,15 @@
   autoupdate = 1
 [filter "media"]
   required = true
-	clean = git media clean %f
-	smudge = git media smudge %f
+    clean = git media clean %f
+    smudge = git media smudge %f
 [user]
   name = Kou Shinrin
   email = huang-chenlin@kayac.com
 [branch "master"]
   remote = origin
   merge = refs/heads/master
+[filter "hawser"]
+  clean = git hawser clean %f
+  smudge = git hawser smudge %f
+  required = true

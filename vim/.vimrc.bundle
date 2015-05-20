@@ -115,5 +115,11 @@ Plugin 'kchmck/vim-coffee-script'
 " twig/jinjia
 Plugin 'Glench/Vim-Jinja2-Syntax'
 
+" react
+Plugin 'mxw/vim-jsx'
+
+" slim
+Plugin 'slim-template/vim-slim.git'
+
 call vundle#end()            " required
-filetype plugin indent on    " required "
+filetype plugin indent on    " required

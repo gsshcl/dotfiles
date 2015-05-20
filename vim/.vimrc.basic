@@ -39,9 +39,9 @@ let g:clipbrdDefaultReg='+'
 " ============================================================
 
 " Indent Fixes
-    autocmd FileType php,css,scss,sass,less,html,eruby,ruby,jade,haml,jinja,javascript,json,coffee,puppet,yaml set shiftwidth=2
-    autocmd FileType php,css,scss,sass,less,html,eruby,ruby,jade,haml,jinja,javascript,json,coffee,puppet,yaml set tabstop=2
-    autocmd FileType php,css,scss,sass,less,html,eruby,ruby,jade,haml,jinja,javascript,json,coffee,puppet,yaml set softtabstop=2
+    autocmd FileType php,css,scss,sass,less,html,eruby,ruby,jade,haml,jinja,javascript,json,coffee,puppet,yaml,slim set shiftwidth=2
+    autocmd FileType php,css,scss,sass,less,html,eruby,ruby,jade,haml,jinja,javascript,json,coffee,puppet,yaml,slim set tabstop=2
+    autocmd FileType php,css,scss,sass,less,html,eruby,ruby,jade,haml,jinja,javascript,json,coffee,puppet,yaml,slim set softtabstop=2
 
 " FE
     autocmd BufRead,BufNewFile *.twig set filetype=jinja
@@ -51,6 +51,7 @@ let g:clipbrdDefaultReg='+'
     autocmd BufRead,BufNewFile *.less set filetype=less
     autocmd BufRead,BufNewFile *.sass,*.scss set filetype=sass
     autocmd BufRead,BufNewFile *.json set filetype=json
+    autocmd BufRead,BufNewFile *.slim set filetype=slim
 
 " css3 syntax bug fix
     augroup VimCSS3Syntax
