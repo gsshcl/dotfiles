@@ -86,3 +86,7 @@ export PATH=$HOME/.rbenv/bin:$PATH
 eval "$(rbenv init -)"
 export PATH="$(brew --prefix homebrew/php/php56)/sbin:$PATH"
 PHP_AUTOCONF="/usr/local/bin/autoconf"
+
+# nvm
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh

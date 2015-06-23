@@ -121,5 +121,8 @@ Plugin 'mxw/vim-jsx'
 " slim
 Plugin 'slim-template/vim-slim.git'
 
+" stylus
+Plugin 'wavded/vim-stylus'
+
 call vundle#end()            " required
 filetype plugin indent on    " required

@@ -96,3 +96,14 @@ let g:gitgutter_eager = 0
 """"""""""""""""""""
 let g:syntastic_check_on_open=1
 let g:syntastic_auto_jump=0
+
+""""""""""""""""""""
+" Jshint
+""""""""""""""""""""
+let jshint2_save = 1
+
+""""""""""""""""""""
+" JSX
+""""""""""""""""""""
+let g:jsx_ext_required = 0
+
