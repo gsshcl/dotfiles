@@ -95,7 +95,7 @@ Plugin 'vim-scripts/JSON.vim'
 
 " js
 Plugin 'pangloss/vim-javascript'
-Plugin 'Shutnik/jshint2.vim'
+" Plugin 'Shutnik/jshint2.vim'
 
 " rails
 Plugin 'tpope/vim-rails'
