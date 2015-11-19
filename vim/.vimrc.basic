@@ -39,9 +39,9 @@ let g:clipbrdDefaultReg='+'
 " ============================================================
 
 " Indent Fixes
-    autocmd FileType php,css,scss,sass,less,html,eruby,ruby,jade,haml,jinja,javascript,json,coffee,puppet,yaml,slim,stylus set shiftwidth=2
-    autocmd FileType php,css,scss,sass,less,html,eruby,ruby,jade,haml,jinja,javascript,json,coffee,puppet,yaml,slim,stylus set tabstop=2
-    autocmd FileType php,css,scss,sass,less,html,eruby,ruby,jade,haml,jinja,javascript,json,coffee,puppet,yaml,slim,stylus set softtabstop=2
+    autocmd FileType php,css,scss,sass,less,html,eruby,ruby,jade,haml,jinja,javascript,coffee,puppet,yaml,slim,stylus set shiftwidth=2
+    autocmd FileType php,css,scss,sass,less,html,eruby,ruby,jade,haml,jinja,javascript,coffee,puppet,yaml,slim,stylus set tabstop=2
+    autocmd FileType php,css,scss,sass,less,html,eruby,ruby,jade,haml,jinja,javascript,coffee,puppet,yaml,slim,stylus set softtabstop=2
 
 " FE
     autocmd BufRead,BufNewFile *.twig set filetype=jinja

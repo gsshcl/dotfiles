@@ -36,7 +36,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'godlygeek/tabular'
 
 " Perform all your vim insert mode completions with Tab
-Plugin 'ervandew/supertab'
+Plugin 'Valloric/YouCompleteMe'
 
 " add :Bclose support
 Plugin 'rbgrouleff/bclose.vim'
@@ -91,10 +91,11 @@ Plugin 'hail2u/vim-css3-syntax'
 Plugin 'tpope/vim-haml'
 
 " JSON
-Plugin 'vim-scripts/JSON.vim'
+Plugin 'elzr/vim-json'
 
 " js
 Plugin 'pangloss/vim-javascript'
+Plugin 'marijnh/tern_for_vim'
 " Plugin 'Shutnik/jshint2.vim'
 
 " rails
